@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter",sans-serif;
+    color:#424242;
+}
+
+nav{
+    display: flex;
+    padding: 20px 150px;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 4px;
+}
+
+.left img{
+    width: 150px;
+}
+
+.right ul{
+    display: flex;
+}
+
+.right li{
+    list-style: none;
+    padding: 4px 20px;
+    color: #666;
+}
+.right span .smallScreen{
+    /* For small screen navBar items */
+    display: none;
+    flex-direction: column;
+}
+/* .right span{
+    background: red;
+} */
+
+main img{
+    width: 50%;
+    margin: 50px;
+}
+.boldText{    
+    font-size: 2.95rem;
+    line-height: 1.25;
+    font-weight: 500;
+}
+.simpleText{
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin: 10px 10px 30px 10px;
+}
+.btn{
+    background-color: #387ed1;
+    color: white;
+    padding: 8px 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+    border: 1px solid rgba(0,0,0,0);
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+/* Media query */
+
+@media screen and (max-width: 1000px){
+    .right .bigScreen li{
+        display: none;
+    }
+}
+@media screen and (min-width: 1000px){
+.hammIcon{
+    display: none;
+}
+}
